@@ -11,8 +11,9 @@ Tudo neste site é **fictício**. Nada aqui pode ir ao ar como está.
       ou **remove a seção inteira** até existirem.
       → `index.html`, seção `#reviews`
 - [ ] **Telefone `(508) 555-0142` é fictício** (faixa 555-01XX é reservada para
-      ficção). Trocar em 6 lugares: header, hero, CTA final, footer, barra
-      mobile e JSON-LD. Os links `wa.me/15085550142` também.
+      ficção). São **10 ocorrências** no `index.html`: 5 links `tel:`,
+      4 links `wa.me/` e 1 no JSON-LD. Um sed resolve:
+      `sed -i '' 's/5085550142/NOVONUMERO/g; s/508) 555-0142/XXX) XXX-XXXX/g' index.html`
 - [ ] **"5+ years"** — confirmar que bate com a realidade dela.
 - [ ] **"English & Portuguese"** — confirmar.
 - [ ] **Nome "Marina Costa"** — trocar pelo nome real. Sugestão: usar
